@@ -13,7 +13,7 @@ package Class1;
              int numberOfEmployees = 1500;
              System.out.println("Total number of Employees in this organization is " + numberOfEmployees);
 
-             long countryPopulation = 382000;
+             long countryPopulation = 382000L;
              System.out.println("The population of this country is " + countryPopulation);
 
              float interestRate = 2.96f;
@@ -34,6 +34,34 @@ package Class1;
 
              String fullName = "Nargis Usman";
              System.out.println("My full name is " + fullName);
+
+             int abc =15;
+             int def = abc;
+             System.out.println("DEF = " + def);
+
+             int num1 = 15;
+             double  num2 = 5.5;
+             double result = num1/num2;
+        System.out.println("Result is " + result);
+        int ver = 15;
+        ver++;
+        ++ver;
+        System.out.println(ver++);
+        System.out.println(++ver);
+
+        int age =7;
+        System.out.println(age); // 7
+        System.out.println(age++); //7
+        System.out.println(age); //8
+        System.out.println(++age); //9
+        System.out.println(age); //9
+        System.out.println(age--); //9
+        System.out.println(age); //8
+        System.out.println(--age); //7
+        System.out.println(age); //7
+
+
+
 
        }
 }
