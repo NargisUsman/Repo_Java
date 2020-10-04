@@ -6,10 +6,19 @@ public class ThirdHomework {
     public static void main(String[] args) {
 
         // in-class task 9/24/2020
-        String statement = "Find the last word statement";
-        String subFrom19 = statement.substring(19);
-        int statementLength = subFrom19.length();
-        System.out.println("The length of the last word is - " + statementLength);
+        String statement1 = "Find my name in the note";
+        int findName = statement1.lastIndexOf(" ");
+        String lastWord = statement1.substring(findName+1);
+        int lastWordlength = lastWord.length();
+        System.out.println(lastWordlength);
+
+        String word = "I live in Flushing, NY";
+        int lastWordIndex = word.lastIndexOf(" ");
+        String lastWord1 = word.substring(lastWordIndex+1);
+        int lastWordLen = lastWord1.length();
+        System.out.println(lastWordLen);
+
+
 
         //Homework #1
         String myFullName = "Nargis Usmanova";

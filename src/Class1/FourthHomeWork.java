@@ -52,12 +52,12 @@ public class FourthHomeWork {
 
             //#2
             int numBer = 30;
-        if (numBer % 3 == 0) {
-            System.out.println("Divisible by 3");
-        } else if (numBer % 5 == 0) {
-            System.out.println("Divisible by 5");
-        } else if (numBer % 3 == 0 && numBer % 5 == 0) {
+        if (numBer%3==0 && number%5==0) {
             System.out.println("Divisible by 3 and 5");
+        } else if (numBer%3==0) {
+            System.out.println("Divisible by 3");
+        } else if (numBer%5==0) {
+            System.out.println("Divisible by 5");
         } else {
             System.out.println(numBer);
         }
@@ -74,6 +74,9 @@ public class FourthHomeWork {
             case 'N':
                 System.out.println("Put the car in a car wash");
                 break;
+            case 'R':
+                System.out.println("Put the car in reverse");
+                break;
             case 'D':
                 if (cMode=="Eco") {
                     System.out.println("You are on 'Eco' mode");
@@ -82,6 +85,40 @@ public class FourthHomeWork {
                 } else if (cMode=="Snow") {
                     System.out.println("You are on 'Snow' mode");
                 }
+        }
+
+
+         String[] names = {"Happy","Peace","Joy","Laugh"};
+         for (int i=0 ; i<=names.length-1 ; i++) {
+            if (i%2==0) {
+                System.out.println(names[i]);
+            }
+
+
+            int [] numbers = {10,9,8,7,6,5,4,3,2,1};
+            for (int ab : numbers ) {
+                System.out.println(ab);
+            }
+
+
+            for (int d=10; d<1; d--) {
+                 System.out.println(names[d]);
+             }
+
+            char [] alphabets = {'A','B','C','D','E','F','G'};
+            for ( int a=0; a<=alphabets.length-1; a++) {
+                System.out.println(alphabets[a]);
+
+                for (char letter : alphabets) {
+                    System.out.println(letter);
+                }
+            }
+            int j=0;
+
+            while (j< alphabets.length) {
+                System.out.println(alphabets[j]);
+                j++;
+            }
 
 
 
