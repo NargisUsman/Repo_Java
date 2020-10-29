@@ -7,10 +7,9 @@ public class TestQuestions {
         int toremove = remove;
         for(int i=0; i<userInput.length; i++) {
             if(userInput[i]==toremove) {
-                userInput[i] = userInput[i+1];
-                userInput[i+1] = 0;
+                userInput[i]=userInput[0+1];
             } else {
-                System.out.println(userInput);
+                System.out.println(userInput[i]);
             }
         }
         return userInput;
@@ -26,6 +25,18 @@ public class TestQuestions {
             }
         }
         return missingNumber;
+    }
+
+    // Ahsan's code
+    public static int missingNum(int[] arr){
+        int missingInt = 1; //2, 3
+        for (int i = 0; i < arr.length; i++){
+            if(arr[i]==missingInt){
+                missingInt++;
+                i = -1;
+            }
+        }
+        return missingInt;
     }
 
     public void pointsChargedAgainstSpeeding() {

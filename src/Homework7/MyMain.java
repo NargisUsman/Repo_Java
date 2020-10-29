@@ -1,4 +1,4 @@
-package Class3;
+package Homework7;
 
 public class MyMain {
 
@@ -13,9 +13,7 @@ public class MyMain {
         String word = "level";
         boolean result = t1.ifItsPalindrome("level");
 
-        String[] words = {"hello","happy","joy","hello","happy"};
-        String duplicate = "";
-        t1.findDuplicate(words,duplicate);
+
 
         String[] value1 = {"Happy", "Healthy", "Beautiful",};
         String[] value2 = {"Happy", "Healthy", "Kind", "Beautiful"};
