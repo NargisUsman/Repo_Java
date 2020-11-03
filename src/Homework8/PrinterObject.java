@@ -13,7 +13,8 @@ public class PrinterObject {
 
         p1.printDouble(10,10);
 
-        p1.printSummery();   
+        p1.printSummery();
+        
 
     }
 }

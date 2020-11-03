@@ -1,4 +1,4 @@
-package Class3;
+package Homework7;
 
 public class Template {
         //Create a method to add all numbers in array with double values.
@@ -37,16 +37,26 @@ public class Template {
         return result;
     }
     //Write a method to print(NO RETURN) the duplicate values of given String array
-    public void findDuplicate(String[] words, String duplicate) {
-        duplicate = "";
-        for (int i=0; i<words.length; i++) {
-            if (words[i].contains(duplicate)) {
-                duplicate = words[i];
-                break;
-            }
-        }
-        System.out.println(duplicate);
+    public void findDuplicate(String[] input) {
+     boolean duplicateFound = false;
+     for(int i =0; i<input.length; i++) {
+         for(int j=i+1; j<input.length; i++) {
+             if(input[i].equalsIgnoreCase(input[j])) {
+                 System.out.println(input[j] + " is a duplicate");
+                 duplicateFound = true;
+             }
+
+         }
+
+
+     }
+     if(!duplicateFound) {
+         System.out.println("Duplicate not found in Array.");
+     }
+
+
     }
+
     //Write a method to print (NO RETURN) the common values between 2 String arrays
     public void commonValues(String[] value1, String[] value2) {
         String commValue = "";
