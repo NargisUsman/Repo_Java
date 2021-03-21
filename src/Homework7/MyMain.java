@@ -1,5 +1,7 @@
 package Homework7;
 
+import Class2.PractiseTwo;
+
 public class MyMain {
 
     public static void main(String[] args) {
@@ -18,6 +20,9 @@ public class MyMain {
         String[] value1 = {"Happy", "Healthy", "Beautiful",};
         String[] value2 = {"Happy", "Healthy", "Kind", "Beautiful"};
         t1.commonValues(value1,value2);
+
+        PractiseTwo pr1 = new PractiseTwo();
+        pr1.duplicateStr("nargis, idris, azfeer, nargis");
 
 
 

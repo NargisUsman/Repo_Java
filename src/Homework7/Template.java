@@ -45,10 +45,7 @@ public class Template {
                  System.out.println(input[j] + " is a duplicate");
                  duplicateFound = true;
              }
-
          }
-
-
      }
      if(!duplicateFound) {
          System.out.println("Duplicate not found in Array.");
@@ -70,10 +67,35 @@ public class Template {
             }
             System.out.println(value1[i]);
         }
+    }
 
+    //in class practice of creating object of the class ( using 2 classes )
+    //Math Library practise
 
+    public int addTwo(int num1, int num2) {
+        return num1 + num2;
 
     }
+
+    public int subTwo(int num1, int num2) {
+        return num1 - num2;
+
+    }
+
+    public int multiplyTwo(int num1, int num2) {
+        return num1 * num2;
+
+    }
+
+    public double divideTwo(double num1, int num2) {
+        double result = 0.0;
+        if(num2!=0) {
+            result = num1/num2;
+        }
+        return num1 / num2;
+
+    }
+
 }
 
 

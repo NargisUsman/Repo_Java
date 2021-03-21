@@ -10,7 +10,7 @@ public class PractiseOne {
         String name = "Happy";
         boolean result = true;
         int num = 22;
-        if(name.length()>3&&num>5) {                                       //if length of name greater than 10 and num is greater than 5
+        if(name.length()>3 && num>5) {                                       //if length of name greater than 10 and num is greater than 5
             System.out.println(name.toUpperCase());                         // print in Upper case
             System.out.println(name.replace('p','b'));       // replace 'p' with 'b'
         } else {                                                            // else make result as false
@@ -19,8 +19,8 @@ public class PractiseOne {
         System.out.println(result);                                         // print result
 
         //print"Even if the number is even
-        int numb =10;
-        if(numb%2==0) {
+        int numb=10;
+        if(numb%2 == 0) {
             System.out.println("Even");
         }
 
